@@ -22,7 +22,7 @@ async function renderCategories(){
     let categoriesNames = await Bookmarks_API.GetCategories();
     let checkedCategories = {allCategories:"false"};
     categoriesNames.forEach((categoryName) => checkedCategories[categoryName] = false)
-    
+    console.log(categoriesNames);
     eraseContentCategories();
     
     if(categoriesNames !== null){
@@ -274,9 +274,11 @@ function renderBookmarkForm(bookmark = null) {
     `);
     $('#Url').on("change", function (e) {
         $(" #bookmarkForm > img").remove();
-        $("[name='Id']").after(`
-            <img class="favicon" src="https://s2.googleusercontent.com/s2/favicons?domain=${e.target.value}" height="50" width="50">
-        `);
+        console.log(e.target.value)
+        if(e.target.value.trim() != '')
+            $("[name='Id']").after(`
+                <img class="favicon" src="https://s2.googleusercontent.com/s2/favicons?domain=${e.target.value}" height="50" width="50">
+            `);
     initFormValidation();
     });
     $('#bookmarkForm').on("submit", async function (event) {
