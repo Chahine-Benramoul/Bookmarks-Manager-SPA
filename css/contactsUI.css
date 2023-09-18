@@ -1,28 +1,28 @@
 
-.contactRow {
+.bookmarkRow {
     padding: 8px;
     padding-bottom: 0px;
     scroll-snap-align: start;
 }
 
-.contactContainer {
+.bookmarkContainer {
     display: grid;
     grid-template-columns: 4fr 1fr;
     align-items: top;
-    background-color: rgb(87, 140, 255);
+    background-color: rgba(226, 227, 227, 0.774);
     border-radius: 6px;
 }
 
 
-.contactContainer .cmdIcon {
+.bookmarkContainer .cmdIcon {
     display: none;
 }
 
-.contactContainer:hover .cmdIcon {
+.bookmarkContainer:hover .cmdIcon {
     display: block;
 }
 
-.contactLayout {
+.bookmarkLayout {
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
@@ -30,27 +30,33 @@
     align-items: center;
 }
 
-.contactName {
+.bookmarkTitle {
     font-size: 1.1rem;
     font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.bookmarkUrl {
     color: white;
 }
 
-.contactPhone {
+.bookmarkCategory {
     color: white;
 }
 
-.contactEmail {
-    color: white;
-}
-
-.contactCommandPanel {
+.bookmarkCommandPanel {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 8px;
 }
 
-.contactdeleteForm {
+.bookmarkdeleteForm {
     margin: 20px;
+}
+
+.favicon{
+    position: relative;
+    bottom: 2px;
+    margin-right: 5px;
 }

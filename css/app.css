@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.noselect {
+.noselectefqw {
     -webkit-touch-callout: none;
     /* iOS Safari */
     -webkit-user-select: none;
@@ -137,5 +137,9 @@ input {
 
 a {
     text-decoration: none !important;
-    color: white !important;
+    color: rgb(42, 144, 240) !important;
+}
+
+.form-label{
+    font-weight: bold !important;
 }

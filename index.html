@@ -19,7 +19,7 @@
 
     <div id="main">
         <div id="header">
-            <img src="contact-logo.svg" class="appLogo" alt="" title="Gestionnaire des favoris">
+            <img src="icons8-bookmark.svg" class="appLogo" alt="" title="Gestionnaire des favoris">
             <h4 id="actionTitle">Liste des favoris</h4>
             <i class="cmdIcon fa fa-plus" id="createBookmark" title="Ajouter un favoris"></i>
             <i class="cmdIcon fa fa-times" id="abort" title="Annuler"></i>
@@ -28,12 +28,15 @@
                     <i class="cmdIcon fa fa-ellipsis-vertical"></i>
                 </div>
                 <div class="dropdown-menu noselect">
-                    <div class="dropdown-item" id="loginCmd">
-                        <i class="menuIcon fa fa-sign-in mx-2"></i> Toutes les catégories
+                    <div class="dropdown-item" id="allCategories">
+                        <i class="menuIcon fa fa-fw mx-2"></i> Toutes les catégories
                     </div>
                     <div class="dropdown-divider"></div>
+                    <div id="categories">
 
-                    <div class="dropdown-item" id="aboutCmd">
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-item menuItemLayout" id="aboutCmd">
                         <i class="menuIcon fa fa-info-circle mx-2"></i> À propos...
                     </div>
                 </div>
